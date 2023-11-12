@@ -8,11 +8,7 @@ The Casio Calculator Shop will provide customers with a convenient and easy to u
 -As the site owner, CASIO will be able to reach more customers and hence increase revenue through calculator sales
 *As a site user, customers will be able to browse and select calculator models suitable for their needs 
 
-
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url. 
+Design plan url: 
 
 ## Features
 (Tentative and may be adjusted)
