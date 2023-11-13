@@ -5,10 +5,10 @@
 ## Design Goals
 
 The Casio Calculator Shop will provide customers with a convenient and easy to use platform to browse and purchase various calculator models.
--As the site owner, CASIO will be able to reach more customers and hence increase revenue through calculator sales
-*As a site user, customers will be able to browse and select calculator models suitable for their needs 
+* As the site owner, CASIO will be able to reach more customers and hence increase revenue through calculator sales
+* As a site user, customers will be able to browse and select calculator models suitable for their needs 
 
-Design plan url: 
+Design plan url: https://github.com/FakeQwek/FED-repo/blob/main/Casio%20Calculator%20Website%20Prototype%20(1).xd
 
 ## Features
 (Tentative and may be adjusted)
