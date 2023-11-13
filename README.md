@@ -28,11 +28,10 @@ The Casio Calculator Shop Website will include the following features:
 - All of the features
 
 ## Technologies Used
-(To be determined)
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+
+- [AdobeXD](https://helpx.adobe.com/xd/get-started.html)
+    - The project uses **AdobeXD** to create the initial design of the online CASIO shop.
 
 
 ## Testing
@@ -54,11 +53,11 @@ If this section grows too long, you may want to split it off into a separate fil
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z]. (https://en.wikipedia.org/wiki/Z)
+- Casio's history was obtained from https://en.wikipedia.org/wiki/Casio
 
 ### Media
 - The photos used in this site were obtained from ...
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- Some inspiration for layouts have come from Amazon and Uniqlo e-commerce sites
