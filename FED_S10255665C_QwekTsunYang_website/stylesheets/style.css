@@ -1,0 +1,56 @@
+/* GLOBAL */
+
+/*Nav Bar*/
+#nav-container {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: beige;
+    border-radius: 15px;
+}
+
+nav a {
+    font-family: system-ui;
+    font-size: 17px;
+}
+
+a:link, a:active {
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+nav img {
+    padding-top: 5px;
+}
+ 
+
+
+/* Homepage */
+
+
+    
+
+
+
+
+
+
+
+
+
+
