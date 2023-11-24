@@ -19,16 +19,19 @@ body {
    
 }
 
+
+
 nav a {
     font-family: system-ui;
     font-size: 17px;
 }
 
-a:link, a:active, a:visited{
+a:link, a:visited, a:active{
     text-decoration: none;
     color: black;
 
 }
+
 
 a:hover,  nav img:hover {
     filter: grayscale(100%);
@@ -43,6 +46,10 @@ html {
 
 nav img {
     padding-top: 5px;
+}
+
+nav li img:hover {
+    filter: blur(1px);
 }
  
 /*Nav Bar End*/
@@ -156,4 +163,71 @@ nav img {
 
 #mission img:hover {
     filter: blur(1px);
+}
+
+/* Mission End */
+
+/* FAQ Start */
+
+#faq body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+  
+}
+
+#faq h3 {
+    font-size: 30px;
+    font-family: system-ui;
+    padding: 50px 0px 0px 225px;
+}
+
+#faq body .divider {
+    
+    margin: 0 0 30px 0;;
+    width: 1200px;
+    height: 10px;
+    background: beige;
+    border-radius: 15px;
+    margin: auto;
+    padding-bottom: 10px;
+
+}
+
+#faq body .divider2 {
+    
+    width: 1150px;
+    height: 5px;
+    background: beige;
+    margin: auto;
+    
+
+}
+
+#faq .qna {
+    padding: 27px 0 27px 0;
+}
+
+#faq body p {
+    font-size: 20px;
+    font-family: system-ui;
+    padding: 5px 0 5px 225px;
+}
+
+#faq h2 {
+    font-size: 25px;
+    font-family: system-ui;
+    padding: 25px 0px 0px 225px;
+}
+
+#faq #email {
+    margin: 0 0 0 0;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#faq #operating-hours {
+    margin-top: 0;
+    font-size: 15px;
 }
