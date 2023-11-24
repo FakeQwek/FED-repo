@@ -20,12 +20,16 @@ The Casio Calculator Shop Website will include the following features:
 5. CASIO Mission Statement
  
 ### Existing Features
-- None 
+- Homepage featuring popular calculators (non-responsive)
+- CASIO Mission Statement (non-responsive)
 
 
 
 ### Features Left to Implement
-- All of the features
+- Responsiveness
+- 1
+- 3
+- 4
 
 ## Technologies Used
 
@@ -39,17 +43,18 @@ The Casio Calculator Shop Website will include the following features:
 (To be updated)
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-1. Placeholder:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+1. Browse homepage:
+    1. Go to the Homepage
+    2. Observe popular calculators
+2. Read mission statement:
+    1. Go to about us page
+    2. Read mission statement
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+Responsiveness:
+* None
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Bugs and Issues: 
+* Website layout is messed up when minimising; should be fixed when responsiveness is implemented
 
 ## Credits
 
@@ -77,6 +82,25 @@ For the wireframes:
   * Calculator with Book - https://i.pinimg.com/originals/a2/86/a0/a286a06382ff387f24c39599e4e81639.jpg
   
   * Shopping Cart Icon -https://cdn-icons-png.flaticon.com/512/263/263142.png
+
+For the website iteself: 
+  * Shopping Cart Icon - https://cdn-icons-png.flaticon.com/512/1413/1413908.png
+
+  * Casio Logo- https://1000logos.net/wp-content/uploads/2017/12/Casio-Logo.png
+
+  * Calculator Banner 1: https://www.casio.com/content/casio/locales/mea/en/products/scientific-calculators/_jcr_content/root/responsivegrid/teaser_copy.casiocoreimg.jpeg/1643768641514/scien-finacal-top-banner-kai.jpeg
+
+  * Calculator Banner 2: https://www.casio.com/content/casio/locales/mea/en/products/scientific-calculators/standard-models/_jcr_content/root/responsivegrid/teaser_copy.casiocoreimg.jpeg/1643768642217/classwiz-eng-banner-kai.jpeg
+
+  * Calculator Banner 3: https://www.casio.com/content/casio/locales/us/en/products/calculators/graphing/_jcr_content/root/responsivegrid/teaser_copy_copy.casiocoreimg.png/1675369329483/casio-graphing-calculator-banner.png
+
+  * Calculator 1: https://casioeducation.com.au/wp-content/uploads/2022/10/fx-8200-AU-web-768x768.png
+
+  * Calculator 2: https://i.ebayimg.com/images/g/2WcAAOSwr35jP5XM/s-l1200.webp
+
+  * Calculator 3: https://www.harleyseducational.com.au/sites/harleyseducational.com.au/files/calculator-casio-scientific-fx82au-plus-ii.jpg
+
+  * Calculator and Book: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxc-fStJcG3fLq-FuDdWQWxxBSIcXhg1tQw&usqp=CAU
 
 ### Acknowledgements
 
