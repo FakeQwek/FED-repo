@@ -6,3 +6,9 @@ Calculator Banner 1: https://www.casio.com/content/casio/locales/mea/en/products
 Calculator Banner 2: https://www.casio.com/content/casio/locales/mea/en/products/scientific-calculators/standard-models/_jcr_content/root/responsivegrid/teaser_copy.casiocoreimg.jpeg/1643768642217/classwiz-eng-banner-kai.jpeg
 
 Calculator Banner 3: https://www.casio.com/content/casio/locales/us/en/products/calculators/graphing/_jcr_content/root/responsivegrid/teaser_copy_copy.casiocoreimg.png/1675369329483/casio-graphing-calculator-banner.png
+
+Calculator 1: https://casioeducation.com.au/wp-content/uploads/2022/10/fx-8200-AU-web-768x768.png
+
+Calculator 2: https://i.ebayimg.com/images/g/2WcAAOSwr35jP5XM/s-l1200.webp
+
+Calculator 3: https://www.harleyseducational.com.au/sites/harleyseducational.com.au/files/calculator-casio-scientific-fx82au-plus-ii.jpg
