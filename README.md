@@ -22,6 +22,8 @@ The Casio Calculator Shop Website will include the following features:
 ### Existing Features
 - Homepage featuring popular calculators (non-responsive)
 - CASIO Mission Statement (non-responsive)
+- FAQ Page (non-responsive)
+- Calculator Browsing
 
 
 
@@ -29,7 +31,7 @@ The Casio Calculator Shop Website will include the following features:
 - Responsiveness
 - 1
 - 3
-- 4
+  
 
 ## Technologies Used
 
@@ -61,6 +63,7 @@ Bugs and Issues:
 ### Content
 - Casio's history was obtained from https://en.wikipedia.org/wiki/Casio
 
+
 ### Media
 For the wireframes:
   * Calculator Banner: https://www.casio.com/content/casio/locales/mea/en/products/scientific-calculators/_jcr_content/root/responsivegrid/teaser_copy.casiocoreimg.jpeg/1643768641514/scien-finacal-top-banner-kai.jpeg
@@ -81,8 +84,7 @@ For the wireframes:
   
   * Calculator with Book - https://i.pinimg.com/originals/a2/86/a0/a286a06382ff387f24c39599e4e81639.jpg
   
-  * Shopping Cart Icon -https://cdn-icons-png.flaticon.com/512/263/263142.png
-
+  
 For the website iteself: 
   * Shopping Cart Icon - https://cdn-icons-png.flaticon.com/512/1413/1413908.png
 
@@ -102,6 +104,26 @@ For the website iteself:
 
   * Calculator and Book: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxc-fStJcG3fLq-FuDdWQWxxBSIcXhg1tQw&usqp=CAU
 
+  * Shopping Cart Icon -https://cdn-icons-png.flaticon.com/512/263/263142.png
+
+  * Calculator 4: https://m.media-amazon.com/images/I/61kM1yUnaLL.SS700.jpg
+
+  * Calculator 5: https://bookstack.queensu.ac.uk/wp-content/uploads/2022/07/Scientific-calculator-original.jpg
+
+  * Calculator 6: https://m.media-amazon.com/images/I/61GjEOoTmSL._AC_UF894,1000_QL80_.jpg
+
+  * Calculator 7: https://m.media-amazon.com/images/I/71XX79HDU7L._AC_SX679_.jpg
+
+  * Calculator 8: https://m.media-amazon.com/images/I/61HWvsaXRTL.__AC_SX300_SY300_QL70_ML2_.jpg
+
+  * Calculator 9: https://m.media-amazon.com/images/I/716Qoq3t58L._AC_UL480_QL65_.jpg
+
+  * Calculator 10: https://m.media-amazon.com/images/I/81nD4gy1QuL._AC_SX679_.jpg
+
+  * Calculator 11: https://m.media-amazon.com/images/I/81L5MLowkoL._AC_SY879_.jpg
+
+
 ### Acknowledgements
 
 - Some inspiration for layouts have come from https://www.amazon.com/ and https://www.uniqlo.com/sg/en/
+- Calculator Search Function implemented was learnt from: https://www.youtube.com/watch?v=TlP5WIxVirU
