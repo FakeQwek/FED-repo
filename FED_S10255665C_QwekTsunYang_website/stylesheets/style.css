@@ -2,6 +2,7 @@
 body {
   padding-bottom: 100px;
   /*adds some leeway before page ends*/
+  overflow-y:scroll;
 }
 
 /*Nav Bar*/
@@ -15,7 +16,9 @@ body {
     margin-right: 170px;
     background-color: beige;
     border-radius: 15px;
-    flex-wrap: nowrap;
+    flex-wrap:nowrap;
+  
+    
    
 }
 
@@ -201,7 +204,6 @@ nav li img:hover {
     height: 5px;
     background: beige;
     margin: auto;
-    
 
 }
 
@@ -230,4 +232,48 @@ nav li img:hover {
 #faq #operating-hours {
     margin-top: 0;
     font-size: 15px;
+}
+
+/*End of FAQ*/
+
+/*Start of Catalog*/
+
+#catalog .search-container {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 65px 200px;
+   
+}
+
+#catalog #search {
+    width: 450px;
+    height: 35px;
+    border-width: 3px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+#catalog .calculator-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    width: 1350px;
+    column-gap: 0px;
+    padding-left: 127px;
+    padding-top: 40px;
+}   
+
+#catalog .slot {
+    padding-bottom: 60px;
+}
+
+#catalog body p {
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding-left: 100px;
+}
+
+#catalog .calc-img img {
+    object-fit: contain;
+    width: 350;
+    height: 350;
 }
