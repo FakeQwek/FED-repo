@@ -1,6 +1,6 @@
-/* Search bar function taught by https://www.youtube.com/watch?v=ZFUOC-y4i0s*/
 
 
+/* Start of Searchbar */
 const search = () =>{
     const searchbox = document.getElementById("search").value.toUpperCase();
     const storeCalc = document.getElementById("calculator-slots");
@@ -22,3 +22,12 @@ const search = () =>{
         }
     }
 }
+/* End of Searchbar */
+
+/* Button Alert */
+function addedToCart() {
+    alert("Added Successfully!");
+  }
+
+
+

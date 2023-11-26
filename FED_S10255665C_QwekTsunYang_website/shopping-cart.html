@@ -37,6 +37,73 @@
       </header>
       
     <body>
-        <script src="./scripts/script.js"></script>
+      <h3>Shopping Cart</h3>
+      <div class="divider"></div>
+      <div id="flex-container">
+        <section id="balance-container">
+          <h2>Balance</h2>
+          <div class="divider2"></div>
+          <div class="balance-list">
+            <div class="entry">
+              <div class="name">FX - 991 ES PLUS</div>
+              <div class="price">$29.90</div>
+            </div>
+            <div class="entry">
+              <div class="name">FX - 300 ES PLUS</div>
+              <div class="price">$18.90</div>
+            </div>
+            <p><b>$48.80</b></p>
+            <div class="divider3"></div>
+            <div class="entry">
+              <div class="name">GST - 8%</div>
+              <div class="price">$3.90</div>
+            </div>
+            <div class="entry">
+              <div class="name">Shipping - Waived</div>
+              <div class="price">$0.00</div>
+            </div>
+            <p class="total"><b>Total: $52.70</b></p>
+            <div class="divider2"></div>
+          </div>
+        </section>
+        <form id="form" action="order-success.html">
+          <h2 class="right-title">Payment and Shipping Info</h2>
+          <div class="divider2" id="divider-right"></div>
+          <div class="info-box">
+            <label for="card"><b>Card No</b><br>
+              <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx" id="card" required pattern = "\d{4}-\d{4}-\d{4}-\d{4}" maxlength="19" minlength="19">
+            </label>
+          </div>
+          <div class="info-box same-line">
+            <label for="expiration" class="same-line"><b>Expiration</b><br>
+              <input type="text" placeholder="dd/yy" id="expiration" required pattern = "\d{2}/\d{2}" maxlength="5" minlength="5">
+            </label>
+          </div>
+          <div class="info-box same-line second">
+            <label for="cvc" class="same-line"><b>CVC</b><br>
+              <input type="text" placeholder="xxx" id="cvc" required pattern="\d{3}" minlength="3" maxlength="3">
+            </label>
+          </div>
+          <div class="divider3 divider-right" ></div>
+          <div class="info-box">
+            <label for="address"><b>Address</b><br>
+              <input type="text" placeholder="Street Name" id="address" required pattern="[\s*a-zA-Z]*" minlength="2" maxlength="25">
+            </label>
+          </div>
+          <div class="info-box same-line">
+            <label for="unitno" class="same-line"><b>Unit No</b><br>
+              <input type="text" placeholder="#07/54" id="unitno" required pattern="#\d{2}/\d{2}" minlength="6" maxlength="6">
+            </label>
+          </div>
+          <div class="info-box same-line second">
+            <label for="postal-code" class="same-line"><b>Postal Code</b><br>
+              <input type="text" placeholder="543210" id="postal-code" required pattern="\d{6}" minlength="6" maxlength="6">
+            </label>
+          </div>
+          <input type="submit" id="submit">Submit Order
+        </form>
+      </div>
+      
+      <script src="./scripts/script.js"></script>
     </body>
 </html>
