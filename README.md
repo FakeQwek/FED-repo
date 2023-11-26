@@ -11,26 +11,28 @@ The Casio Calculator Shop will provide customers with a convenient and easy to u
 Design plan url: https://github.com/FakeQwek/FED-repo/blob/main/Casio%20Calculator%20Website%20Prototype%20(1).xd
 
 ## Features
-(Tentative and may be adjusted)
+
 The Casio Calculator Shop Website will include the following features:
-1. Calculator browsing with selection filters
+1. Calculator browsing with search bar
 2. Homepage featuring popular calculators
-3. Shopping cart
+3. Shopping cart with order form
 4. FAQ Page
 5. CASIO Mission Statement
+6. Order finished page
  
 ### Existing Features
 - Homepage featuring popular calculators (non-responsive)
 - CASIO Mission Statement (non-responsive)
 - FAQ Page (non-responsive)
-- Calculator Browsing
+- Calculator Browsing (non-responsive)
+- Shopping cart with order form (non-responsive)
+- Order finished page (non-responsive)
 
 
 
 ### Features Left to Implement
 - Responsiveness
-- 1
-- 3
+
   
 
 ## Technologies Used
@@ -42,15 +44,26 @@ The Casio Calculator Shop Website will include the following features:
     - The project uses **Visual Studio Code** to develop the website and all its features
 
 ## Testing
-(To be updated)
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
 1. Browse homepage:
     1. Go to the Homepage
     2. Observe popular calculators
 2. Read mission statement:
     1. Go to about us page
     2. Read mission statement
+3. Have questions about CASIO calculator:
+    1. Go to FAQ page
+    2. Read questions and answers
+    3. Contact casio staff for further enquiries
+4. Want to find suitable calculator:
+    1. Go to browse page
+    2. Search for calculator model with search bar
+    3. Find calculator model
+    4. Add to cart
+5. Want to finalise purchase
+    1. Go to cart page
+    2. Review order details
+    3. Fill in form information
+    4. Submit order
 
 Responsiveness:
 * None
