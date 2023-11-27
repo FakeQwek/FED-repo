@@ -3,64 +3,137 @@ body {
   padding-bottom: 100px;
   /*adds some leeway before page ends*/
   overflow-y:scroll;
+  /*fixes the scroll bar*/
+
 }
+* {
+    box-sizing: border-box;
+}
+/* End of -GLOBAL- */
+
 
 /*Nav Bar*/
+
+/* sets container to multiple rows with the content spaced 
+equally around the nav bar nav bar is centered and has a curved border */
 #nav-container {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
-    margin-left: 170px;
-    margin-right: 170px;
+    margin:auto;
+    margin-top: 50px;
     background-color: beige;
     border-radius: 15px;
     flex-wrap:nowrap;
-  
-    
-   
+    width: 76%;
 }
 
 
-
+/* sets link font-size and font-family */
 nav a {
     font-family: system-ui;
     font-size: 17px;
 }
 
+/* sets color of link to black with no text-decoration */
 a:link, a:visited, a:active{
     text-decoration: none;
     color: black;
 
 }
 
-
-a:hover,  nav img:hover {
-    filter: grayscale(100%);
+/* links turn white when hovering */
+a:hover {
     text-decoration: none;
     color: white;
 }
 
+/* size and width of html set to 100%*/
 html {
     height: 100%;
     width: 100%;
 }
 
+/* image is padded top slightly */
 nav img {
     padding-top: 5px;
 }
 
+/* shopping cart blurs when hovering */
 nav li img:hover {
     filter: blur(1px);
 }
- 
+
+/* responsive css */
+@media (max-width: 1200px) {
+    nav a{
+      font-size: 13px;
+    }
+  }
+
+
+
+@media (max-width: 900px) {
+    /* changes size of font */
+    nav a {
+        font-family: system-ui;
+        font-size: 15px;
+        line-height: 0.5;
+        
+
+    }
+    /* changes positioning of li elements */
+    nav li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    /* changes size of casio logo */
+    nav img {
+        width: 25%;
+        height: 25%;
+        margin-top: 1%;
+        
+
+    }
+    /* changes size of shopping cart */
+    nav a img {
+        width: 25%;
+        height: 25%;
+        margin-bottom: 10px;
+        margin-top: 2%;
+        
+    }
+    /* changes width and margins of nav bar */
+    #nav-container {
+        width: 90%;
+        margin-top: 5%;
+       
+    }
+
+
+}
+
+/* changes size of fonts */
+@media (max-width: 700px) {
+  nav a{
+    font-size: 5%;
+
+  }
+}
+
+
+
 /*Nav Bar End*/
 
 /* -GLOBAL END- */
 
 /* -Homepage- */
 
+/* aligns banner to center with top margin of 50px */
 #homepage body #img-container{
     margin-top: 50px;
     display: flex;
@@ -69,6 +142,7 @@ nav li img:hover {
    
 }
 
+/* sets size, background, rounded corners and margin of divider */
 #homepage body .divider {
     margin-top: 50px;
     width: 1180px;
@@ -77,6 +151,7 @@ nav li img:hover {
     border-radius: 15px;
 }
 
+/* sets positioning of title and fontsize */
 #homepage body #title {
     padding: 40px 0, 40px;
     font-size: 35px;
@@ -84,6 +159,7 @@ nav li img:hover {
     margin-left: 218px;
 }
 
+/* sets the positioning of calculator slots with a gap of 3 columns */
 #homepage body #item-container {
 
   display: flex;
@@ -95,6 +171,7 @@ nav li img:hover {
 
 }
 
+/* sets size of each img, and rounded corners as well as aligns img to center*/
 #homepage body .calculator {
    display:flex;
    flex-direction: row;
@@ -107,28 +184,78 @@ nav li img:hover {
      
 }
 
+/* sets positioning of description per calculator each text will be next 
+to one another */
 #homepage .desc{
     display:inline-block;
     margin-left: 225px;
     
 }
 
+/* sets size of the font as well as its font type */
 #homepage body p {
     font-size: x-large;
     font-family: sans-serif;
 }
 
+/* sets position of text shifted right */
 #homepage #text2 {
     margin-left: 170px;
 }
 
+/* sets position of text shifted right */
 #homepage #text3 {
     margin-left: 145px;
 }
 
+
+/* responsive css */
+@media (max-width: 1200px) {
+    /* shifts title right and sets font-size */
+    #homepage body #title {
+       
+        font-size: 100%;
+        margin-left: 32%;
+        margin-right: auto; 
+        
+    }
+    /* sets the size of the image container, shifts container down and
+    centers container */
+    #homepage #img-container img {
+        width: 90%;
+        height: 90%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 1%;
+      }
+    /* sets the size of the item container */
+    #homepage #item-container {
+        width: 40%;
+        height: 40%;
+    }
+    /* sets the size of the text container */
+    #homepage #text-container {
+        width: 40%;
+        height: 40%;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+  /*sets the divider width*/
+  #homepage body .divider {
+    width: 90%;
+  }
+}
+
+
+
 /* Homepage End */
 
 /* Mission Start */
+/* sets spacing for body content and aligns the box center
+each content is arranged in a column*/
 #mission #flex-container {
     padding-top: 50px;
     display: flex;
@@ -137,10 +264,12 @@ nav li img:hover {
     align-items: center;
 }
 
+/* sets spacing for img */
 #mission #box img {
     padding-top: 12px;
 }
 
+/* sets size of background box as well as its color and rounded corner */
 #mission #box {
     display: flex;
     justify-content: center;
@@ -151,11 +280,13 @@ nav li img:hover {
     border-radius: 20px;
 }
 
+/* sets size of font as well as its font type */
 #mission h3 {
     font-family: sans-serif;
     font-size:30px;
 }
 
+/* sets spacing of paragraph text as well as its font size and type */
 #mission p {
     margin-top: 35px;
     font-family: sans-serif;
@@ -164,6 +295,7 @@ nav li img:hover {
     font-size: 16px;
 }
 
+/* makes img blurred after hovering */
 #mission img:hover {
     filter: blur(1px);
 }
@@ -172,6 +304,7 @@ nav li img:hover {
 
 /* FAQ Start */
 
+/* aligns elements in body to the start of body */
 #faq body {
     display: flex;
     flex-direction: column;
@@ -180,12 +313,15 @@ nav li img:hover {
   
 }
 
+/* sets the size and type of the font as well as spacing */
 #faq h3 {
     font-size: 30px;
     font-family: system-ui;
     padding: 50px 0px 0px 225px;
 }
 
+/* sets the size of the divider, background color as well as its spacing.
+also centers the divider*/
 #faq body .divider {
     
     margin: 0 0 30px 0;;
@@ -198,6 +334,7 @@ nav li img:hover {
 
 }
 
+/* sets the size of the divider, background colour and makes the divider centered*/
 #faq body .divider2 {
     
     width: 1150px;
@@ -207,28 +344,33 @@ nav li img:hover {
 
 }
 
+/* sets spacing for every qna set */
 #faq .qna {
     padding: 27px 0 27px 0;
 }
 
+/* sets size of font and font type as well as spacing */
 #faq body p {
     font-size: 20px;
     font-family: system-ui;
     padding: 5px 0 5px 225px;
 }
 
+/* sets size and type of font as well as spacing */
 #faq h2 {
     font-size: 25px;
     font-family: system-ui;
     padding: 25px 0px 0px 225px;
 }
 
+/* resets margin and sets size of font */
 #faq #email {
     margin: 0 0 0 0;
     font-size: 20px;
-    margin-bottom: 0;
+   
 }
 
+/* resets top margin and sets the size of font */
 #faq #operating-hours {
     margin-top: 0;
     font-size: 15px;
@@ -238,6 +380,7 @@ nav li img:hover {
 
 /*Start of Catalog*/
 
+/* sets spacing of search container as well as alignment */
 #catalog .search-container {
     display: flex;
     flex-direction: column;
@@ -245,6 +388,7 @@ nav li img:hover {
    
 }
 
+/* sets the size of the input as well as type of font. Border is rounded and thin */
 #catalog #search {
     width: 450px;
     height: 35px;
@@ -253,6 +397,8 @@ nav li img:hover {
     font-family: sans-serif;
 }
 
+/* sets calculator slots to a grid that repeats calculators each with 350px width
+each slot has spacing between each other */
 #catalog .calculator-slots {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -262,22 +408,27 @@ nav li img:hover {
     padding-top: 40px;
 }   
 
+/* each slot is seperated from the bottom */
 #catalog .slot {
     padding-bottom: 60px;
 }
 
+/* sets font size as well as type of font, spaces right 100px */
 #catalog body p {
     font-size: 1rem;
     font-family: sans-serif;
     padding-left: 100px;
 }
 
+/* sets img to be contained within the catalog, each img is 350p x 350p */
 #catalog .calc-img img {
     object-fit: contain;
     width: 350;
     height: 350;
 }
 
+/* sets the position and size of the button, background color and curved corners
+cursor changes when hovering over button */
 #catalog button {
     font-family: sans-serif;
     padding-left: 35px;
@@ -290,6 +441,7 @@ nav li img:hover {
 
 }
 
+/* when hovering over button, button turns white */
 #catalog button:hover {
     background-color: white;
 }
@@ -297,18 +449,22 @@ nav li img:hover {
 
 /* Start of Shopping Cart */
 
+/* sets size and type of font, as well as spacing */
 #cart h3 {
     font-size: 35px;
     font-family: system-ui;
     padding: 50px 0px 0px 225px;
 }
 
+/* balance container is aligned to the center, first of two columns with a width: 30% */
 #cart #balance-container {
     justify-content: center;
     flex-direction: column;
     width:30%;
 }
 
+/* sets size of divider as well as background, curved corners. Also centers
+the divider */
 #cart .divider {
     margin: 0 0 30px 0;;
     width: 1200px;
@@ -320,12 +476,14 @@ nav li img:hover {
 
 }
 
+/* sets the size and type of font of h2 as well as its spacing */
 #cart h2 {
     font-size: 25px;
     font-family: system-ui;
     padding: 50px 0px 0px 400px;
 }
 
+/* sets size, background and curved corners of divider, also shifts it right */
 #cart .divider2 {
     margin: 0 0 0 255px;
     width: 375px;
@@ -334,18 +492,21 @@ nav li img:hover {
     border-radius: 5px;
 }
 
+/* sets spacing as well as size and type of font */
 #cart .name {
     padding: 25px 0 0 270px;
     font-size: 20px;
     font-family: sans-serif; 
 }
 
+/* sets spacing as well as size and type of font */
 #cart .price {
     padding: 5px 0 0 270px;
     font-size: 15px;
     font-family: sans-serif;
 }
 
+/* sets size and spacing of divider. Also sets background color and curved corners  */
 #cart .divider3 {
     margin: 0 0 0 270px;
     width: 350px;
@@ -354,6 +515,7 @@ nav li img:hover {
     border-radius: 5px;
 }
 
+/* sets size and type of font, also shifts paragraph to the right */
 #cart .balance-list p {
     font-size: 20px;
     font-family: sans-serif;
@@ -361,6 +523,7 @@ nav li img:hover {
 
 }
 
+/* sets size and type of font, also shifts paragraph to the right */
 #cart .balance-list .total {
     font-size: 20px;
     font-family: sans-serif;
@@ -368,32 +531,35 @@ nav li img:hover {
 
 }
 
+/* ensures that there are two columns side by side */
 #cart #flex-container {
     display: flex;
     flex-direction: row;
-   
-    
 }
 
+/* shifts form right */
 #cart form {
     padding-left: 50px;
    
 }
 
+/* sets h2 font size and type */
 #cart h2 .right-title{
     font-size: 25px;
     font-family: system-ui;
 }
 
+/* moves divider right */
 #cart #divider-right {
    margin-left: 370px;
-
 }
 
-#cart .divider-right {
+/* sets spacing for 3rd divider */
+#cart #divider-right2 {
     margin:35px 0 0 380px;
 }
 
+/* sets size and type of font as well as spacing */
 #cart label {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -401,6 +567,7 @@ nav li img:hover {
     font-family: sans-serif;
 }
 
+/* sets input elements' position, size, as well as rounded corners */
 #cart input {
     border-radius: 8px;
     width: 300px;
@@ -409,34 +576,34 @@ nav li img:hover {
     border-width: 3px;
 }
 
+/* sets spacing for each info box */
 #cart .info-box {
     margin: 25px 0 0 405px;
 }
 
-#cart #expiration {
+/* sets width of expiration, cvc and unitno boxes to 70px */
+#cart #expiration, #cart #cvc, #cart #unitno {
     width: 70px;
 }
 
-#cart #cvc {
-    width: 70px;
-}
 
-#cart #unitno {
-    width: 70px;
-}
-
+/* sets width of postal code box to 100px */
 #cart #postal-code {
     width: 100px;
 }
 
+/* ensure elements are arranged on the same line */
 #cart .same-line {
     display: inline-block;
 }
 
+/* spaces postal code box to the right */
 #cart .second { 
     margin-left: 50px;
 }
 
+/* sets font size, type, spacing, background color and rounded corners
+hovering over button sets the cursor to a pointer */
 #cart #submit {
     display: block;
     font-family: sans-serif;
@@ -450,11 +617,13 @@ nav li img:hover {
     border-width: 4px;
 }
 
+/* allows for spacing near bottom of page */
 #cart body {
     padding-bottom: 150px;
 }
 
 
+/* sets color of button to white when hovering */
 #cart #submit:hover {
     background-color: white;
 }
@@ -463,6 +632,7 @@ nav li img:hover {
 
 /* Start of Order */
 
+/* spaces and sets font size and type of h3 */
 #order h3 {
     font-size: 60px;
     font-family: system-ui;
@@ -470,6 +640,7 @@ nav li img:hover {
     
 }
 
+/* sets size and type of font as well as centers and spaces the paragraph */
 #order p {
     font-size: 30px;
     font-family: sans-serif;
@@ -477,6 +648,7 @@ nav li img:hover {
     margin-top: 20px;
 }
 
+/* sets size and type of font as well as the width and spacing */
 #order button {
     font-size: 20px;
     font-family: sans-serif;
@@ -484,6 +656,7 @@ nav li img:hover {
     margin: 100px 0 0 510px;
 }
 
+/* sets spacing of container as well as centers the elements within */
 #order #flex-container {
     margin-top: 70px;
     display:flex;

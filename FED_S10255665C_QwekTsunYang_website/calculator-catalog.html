@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html id="catalog">
+     <!-- Tab name, links and meta content -->
     <head>
         <title>Casio Calculators</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width,initial-scale= 1">
         <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
         <link href="./stylesheets/normalize.css" rel="stylesheet" type="text/css"/>
     </head>
     <header>
-      
+        <!--Nav bar-->
         <nav>
            <ul id="nav-container">
             <img src="./images/casio-logo.png" width="120" height="67.5">
@@ -32,7 +33,7 @@
          </nav>
   
       </header>
-      
+    <!--Contains all the calculator listings-->
     <body>
       <div class="search-container">
         <input type="search" id="search" placeholder="Find your calculator" onkeyup="search()">
@@ -40,13 +41,15 @@
       <div class="calculator-slots" id="calculator-slots">
         
         
-
+         <!-- Each calculator listing in a slot: each set of elements is the same-->
         <div class="slot">
+           <!-- Img, name and description per slot -->
           <div class="calc-img"><img src="./images/calculator1.png" width="350" height="350"></div>
           <span class="desc" >
             <p class="name">FX - 8200 AU</p>
             <p>$40.00</p>
             <p>3.7 Stars - 25 Reviews</p>
+            <!-- Sends an alert when clicking add to cart-->
             <button onclick="addedToCart()">Add to Cart</button>
           </span>
         </div>
