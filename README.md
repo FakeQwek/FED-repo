@@ -43,6 +43,12 @@ The Casio Calculator Shop Website will include the following features:
 - [Visual Studio Code](https://code.visualstudio.com/)
     - The project uses **Visual Studio Code** to develop the website and all its features
 
+- [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
+    - The project uses **Jigsaw Validator** to validate css markup
+ 
+ -[W3C Markup Vslidation Service](https://validator.w3.org/)
+    - The porject uses the **W3C Markup Validation Service** to validate html markup
+
 ## Testing
 1. Browse homepage:
     1. Go to the Homepage
