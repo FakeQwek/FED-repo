@@ -6,9 +6,19 @@ body {
   /*fixes the scroll bar*/
 
 }
+/* makes border and padding a part of width */
 * {
     box-sizing: border-box;
 }
+
+
+/* size and width of html set to 100%*/
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
 /* End of -GLOBAL- */
 
 
@@ -33,8 +43,8 @@ equally around the nav bar nav bar is centered and has a curved border */
 
 /* sets link font-size and font-family */
 nav a {
-    font-family: system-ui;
-    font-size: 17px;
+    font-family: monospace;
+    font-size: 20px;
 }
 
 /* sets color of link to black with no text-decoration */
@@ -47,14 +57,9 @@ a:link, a:visited, a:active{
 /* links turn white when hovering */
 a:hover {
     text-decoration: none;
-    color: white;
+    color: grey;
 }
 
-/* size and width of html set to 100%*/
-html {
-    height: 100%;
-    width: 100%;
-}
 
 /* image is padded top slightly */
 nav img {
@@ -62,69 +67,57 @@ nav img {
 }
 
 /* shopping cart blurs when hovering */
-nav li img:hover {
+nav #cart:hover {
     filter: blur(1px);
 }
 
-/* responsive css */
-@media (max-width: 1200px) {
-    nav a{
-      font-size: 13px;
-    }
-  }
-
-
-
+/* For smaller devices - Adjusts links, imges based on viewport */
 @media (max-width: 900px) {
-    /* changes size of font */
-    nav a {
-        font-family: system-ui;
-        font-size: 15px;
-        line-height: 0.5;
-        
-
-    }
-    /* changes positioning of li elements */
-    nav li {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-    /* changes size of casio logo */
-    nav img {
-        width: 25%;
-        height: 25%;
-        margin-top: 1%;
-        
-
-    }
-    /* changes size of shopping cart */
-    nav a img {
-        width: 25%;
-        height: 25%;
-        margin-bottom: 10px;
-        margin-top: 2%;
-        
-    }
-    /* changes width and margins of nav bar */
-    #nav-container {
-        width: 90%;
-        margin-top: 5%;
-       
-    }
-
-
-}
-
-/* changes size of fonts */
-@media (max-width: 700px) {
-  nav a{
-    font-size: 5%;
-
+  #nav-container {
+    margin-top: 5%;
+    width: 90%;
+    height: 15%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
+  nav a {
+    font-family: monospace;
+    font-size:60%;
+    line-height: 1;
+    
+  }
+  nav img {
+    padding-top: 2%;
+    width: 20%;
+    object-fit: contain;
+  }
+  nav li {
+    width: 5%;
+    line-height: 15%;
+  }
+  nav #cart {
+   width: 30%;
+   height: 50px;
+   margin-left: 12%;
+   margin-top: 2%;
+}
 }
 
+
+@media (max-width: 760px) {
+    nav a{
+      font-size:40%;
+    }
+}
+
+@media (max-width: 330px) {
+    nav a{
+      font-size:30%;
+    }
+}
+
+
+    
 
 
 /*Nav Bar End*/
@@ -153,9 +146,9 @@ nav li img:hover {
 
 /* sets positioning of title and fontsize */
 #homepage body #title {
-    padding: 40px 0, 40px;
+    padding: 40px, 0, 40px, 0;
     font-size: 35px;
-    font-family: system-ui;
+    font-family: sans-serif;
     margin-left: 218px;
 }
 
@@ -209,47 +202,74 @@ to one another */
 }
 
 
-/* responsive css */
-@media (max-width: 1200px) {
-    /* shifts title right and sets font-size */
-    #homepage body #title {
-       
-        font-size: 100%;
-        margin-left: 32%;
-        margin-right: auto; 
-        
+
+
+
+
+/* For smaller devices - Adjusts banner, text etc based on viewport*/
+@media (max-width: 1300px) {
+    #homepage #img-container {
+      margin-top: 3% !important;
+      width: 90%;
+      height: 2%;
+      margin-left: auto;
+      margin-right: auto;
     }
-    /* sets the size of the image container, shifts container down and
-    centers container */
     #homepage #img-container img {
-        width: 90%;
-        height: 90%;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top: 1%;
-      }
-    /* sets the size of the item container */
+      width: 90%;
+      height: 2%;
+      object-fit: contain;
+    }
+    #homepage .divider {
+        max-width: 100%;
+        margin-top: 5% !important;
+        height: 10px;
+    }
+    #homepage #title {
+        font-size: 70% !important;
+        margin-left: 12% !important;
+    }
     #homepage #item-container {
-        width: 40%;
-        height: 40%;
+       column-gap: 10% !important;
+       flex-direction: row;
     }
-    /* sets the size of the text container */
-    #homepage #text-container {
-        width: 40%;
-        height: 40%;
+    #homepage body .calculator {
+        justify-content: space-around;
+        width: 20%;
+        height: 157px;
+        border-radius: 10%;     
     }
-
+    #homepage body #item-container img{
+        object-fit: contain;
+        height: 80%;  
+    }
+    #homepage body #text-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+       
+    }
+    #homepage body .desc p {
+        font-size: 60%;
+    }
+    #homepage .desc {
+        margin-left: 0% !important;
+    }
 }
 
-
-@media (max-width: 900px) {
-  /*sets the divider width*/
-  #homepage body .divider {
-    width: 90%;
-  }
+@media (max-width: 700px) {
+    #homepage body .desc p {
+        font-size: 50%;
+    }
+    
 }
-
-
+@media (max-width: 370px) {
+    #homepage body .desc p {
+        font-size: 30%;
+    }
+}
+    
 
 /* Homepage End */
 
@@ -266,7 +286,7 @@ each content is arranged in a column*/
 
 /* sets spacing for img */
 #mission #box img {
-    padding-top: 12px;
+    padding-top: 25px;
 }
 
 /* sets size of background box as well as its color and rounded corner */
@@ -299,6 +319,52 @@ each content is arranged in a column*/
 #mission img:hover {
     filter: blur(1px);
 }
+
+/* For smaller devices - Adjusts imges and text based on viewport */
+@media (max-width: 1300px) {
+  #mission #flex-container {
+    padding-top: 5%;
+  }
+  #mission #box {
+    width: 54%;
+    height: 48%;
+    border-radius: 5%;
+  }
+  #mission h3 {
+    font-size: 150%;
+  }
+  #mission p {
+    margin-top: 5%;
+    padding-bottom: 8%;
+    font-size: 80%;
+  }
+  #mission #flex-container img {
+    width: 90%;
+    height: 70%;
+    align-self: center;
+    
+    padding-top: 7%;
+    padding-bottom: 7%;  
+  }
+}
+@media (max-width: 450px) {
+    #mission p { 
+      font-size: 40%;
+    }
+    #mission h3 {
+        font-size: 80%;
+      }
+}
+@media (max-width: 400px) {
+    #mission p { 
+      font-size: 0.0005%;
+    }
+    #mission h3 {
+        font-size: 75%;
+      }
+}
+
+
 
 /* Mission End */
 
@@ -376,6 +442,89 @@ also centers the divider*/
     font-size: 15px;
 }
 
+/* For smaller devices - Adjusts text, dividers based on viewport */
+@media (max-width: 1300px) {
+    #faq h3 {
+        font-size: 95%;   
+        padding: 10% 0px 0px 15%;
+    }
+    #faq body .divider {
+        margin: 0 0 10% 0;
+        width: 88%;
+        height: 3%;
+        border-radius: 10%;
+        margin: auto;
+        padding-bottom: 1.7%;
+    }
+    #faq body p {
+        font-size: 75%;
+        padding: 1% 0 1% 13%;
+    }
+    #faq .qna {
+        padding: 1% 0 1% 0;
+    }
+    #faq body .divider2 {
+        width: 90%;
+        height: 3px;
+    }
+    #faq h2 {
+        font-size: 70%;
+        padding: 3% 0px 0px 15%;
+    }
+    #faq #email {
+        margin-left: 2%;
+        font-size: 60%;
+       
+    }
+    #faq #operating-hours {
+        margin-left: 2%;
+        font-size: 65%;
+    }
+}
+@media (max-width: 760px) {
+    #faq h3 {
+        font-size: 65%;   
+        padding: 10% 0px 0px 15%;
+    }
+    #faq body p {
+        font-size: 45%;
+        padding: 1% 0 1% 13%;
+    }
+    #faq h2 {
+        font-size: 40%;
+        padding: 3% 0px 0px 15%;
+    }#faq #email {
+        margin-left: 2%;
+        font-size: 30%;
+    }
+    #faq #operating-hours {
+        margin-left: 2%;
+        font-size: 35%;
+    }
+}
+
+@media (max-width: 460px) {
+    #faq h3 {
+        font-size: 55%;   
+        padding: 10% 0px 0px 15%;
+    }
+    #faq body p {
+        font-size: 35%;
+        padding: 1% 0 1% 13%;
+    }
+    #faq h2 {
+        font-size: 30%;
+        padding: 3% 0px 0px 15%;
+    }#faq #email {
+        margin-left: 2%;
+        font-size: 20%;
+    }
+    #faq #operating-hours {
+        margin-left: 2%;
+        font-size: 25%;
+    }
+}
+
 /*End of FAQ*/
 
 /*Start of Catalog*/
@@ -445,6 +594,101 @@ cursor changes when hovering over button */
 #catalog button:hover {
     background-color: white;
 }
+
+/* For smaller devices - Adjusts search bar, imges and text based on viewport */
+@media (max-width: 1300px) {
+    #catalog #search {
+        width: 40%;
+        border-width: 3px;
+        border-radius: 3%;
+    }
+    #catalog .calculator-slots {
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        width: 90%;
+        column-gap: 0px;
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+    #catalog .calc-img img {
+        width: 350px;
+        height: 350px;
+    }
+    #catalog body p {
+        font-size: 90%;
+        padding-left: 35%;
+    }
+    #catalog button {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 35%;
+        border-radius: 2%;
+        height: 6.5%;
+    }
+
+}
+@media (max-width: 1105px) {
+    #catalog .calc-img img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 830px) {
+    #catalog #search {
+        width: 40%;
+        border-width: 3px;
+        border-radius: 3%;
+        margin-left: -5%;
+    }
+    #catalog .calc-img img {
+        width: 200px;
+        height: 200px;
+    }
+    #catalog body p {
+        font-size: 70%;
+        padding-left: 35%;
+    }
+    #catalog button {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 35%;
+        border-radius: 2%;
+        height: 6.5%;
+        font-size: 70%;
+    }
+
+}
+@media (max-width: 580px) {
+    #catalog #search {
+        width: 70%;
+        border-width: 3px;
+        border-radius: 3%;
+        margin-left: -45%;
+    }
+    #catalog body p {
+        font-size: 50%;
+        padding-left: 55%;
+    }
+    #catalog button {
+        margin-left: 55%;
+        font-size: 40%;
+    }
+    #catalog .calc-img img {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 400px) {
+    #catalog #search {
+        width: 100%;
+        border-width: 3px;
+        border-radius: 3%;
+        margin-left: -75%;
+    }
+
+}
+
+
 /* End of Catalog */
 
 /* Start of Shopping Cart */
@@ -485,7 +729,7 @@ the divider */
 
 /* sets size, background and curved corners of divider, also shifts it right */
 #cart .divider2 {
-    margin: 0 0 0 255px;
+    margin: 4% 0 0 255px;
     width: 375px;
     height: 5px;
     background: black;
@@ -527,7 +771,7 @@ the divider */
 #cart .balance-list .total {
     font-size: 20px;
     font-family: sans-serif;
-    padding-left: 475px;
+    padding-left: 535px;
 
 }
 
@@ -622,38 +866,188 @@ hovering over button sets the cursor to a pointer */
     padding-bottom: 150px;
 }
 
-
 /* sets color of button to white when hovering */
 #cart #submit:hover {
     background-color: white;
 }
 
+/* For smaller devices - Adjusts dividers, form and text based on viewport */
+@media (max-width: 1105px) {
+  #cart .name {
+    padding: 8% 0 0 40%;
+    font-size: 120%;
+  }
+  #cart h3 {
+   font-size: 125%;
+   padding: 10% 0px 0px 30%;
+  }
+  #cart .divider {
+   
+    width: 85%;
+    height: 3px;
+    background: beige;
+    border-radius: 15px;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  #cart #flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  #cart .divider {
+    margin:auto;
+    width: 80%;
+  }
+  #cart h2 {
+    font-size: 120%;
+    padding: 10% 0 0 80%;
+  }
+  #cart #balance-container {
+    width: 50%;
+  }
+  #cart .divider2 {
+    margin: 4% 0 0 25%;
+    width: 150%;
+  }
+  #cart .price {
+    padding: 1% 0 0 140%;
+    font-size: 110%;
+  }
+  #cart .divider3 {
+    margin: 0 0 0 36%;
+    width: 130%;
+  }
+  #cart .balance-list p {
+    padding-left: 140%;
+    font-size: 120%;
+  }
+  #cart .balance-list .total {
+    padding-left: 140%;
+    font-size: 120%;
+  }
+  #cart .right-title{
+    font-size: 130%;
+    padding: 25% 0 5% 30%;
+}
+  #cart #divider-right {
+    margin: 0 20% 0 10%;
+    width: 80%;
+  }
+  #cart form {
+    padding-left: 0;
+  }
+  #cart .info-box {
+    margin: 5% 0 0 20%;
+  }
+  #cart label {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 70%;
+  }
+  #cart input {
+    width: 70%;
+    margin-top: 1%;
+  }
+  #cart #postal-code{
+    width: 45%;
+  }
+  #cart #divider-right2 {
+    margin: 10% 0 0 17%;
+    width: 65%;
+  }
+  #cart #submit {
+    margin-left: 17%;
+    margin-top: 15%;
+    width: 65%;
+    height: 90%;
+  }
+  #cart #postal-code {
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 750px) {
+  #cart h3 {
+    font-size: 100%;
+    padding: 10% 0px 0px 10%;
+  }
+  #cart .name {
+    padding: 7% 0 0 40%;
+    font-size: 100%;
+  }
+  #cart .price {
+    padding: 1% 0 0 140%;
+    font-size: 110%;
+  }
+  #cart .balance-list p {
+    padding-left: 136%;
+    font-size: 110%;
+  }
+  #cart .balance-list .total {
+    padding-left: 135%;
+    font-size: 110%;
+  }
+  #cart .right-title{
+    font-size: 100%;
+}
+  #cart input {
+    width: 60%;
+  }
+  #cart #postal-code {
+    margin-bottom: 10%;
+  }
+  #cart .divider2 {
+    margin-top: 3%;
+  }
+}
+
+
+@media (max-width: 450px) {
+    #cart .name {
+        font-size: 77%;
+      }
+      #cart .balance-list .total {
+        padding-left: 125%;
+      }
+      #cart .right-title{
+        font-size: 97%;
+        padding: 25% 0 5% 17%;
+    }
+    #cart .price {
+        font-size: 90%;
+      }
+}
+
+
+
 /* End of Shopping Cart */
 
-/* Start of Order */
+/* Start of Order - Order is already responsive*/
 
 /* spaces and sets font size and type of h3 */
 #order h3 {
-    font-size: 60px;
+    font-size: 350%;
     font-family: system-ui;
-    margin: 100px auto 40px auto;
+    margin: 5% auto 3% auto;
     
 }
 
 /* sets size and type of font as well as centers and spaces the paragraph */
 #order p {
-    font-size: 30px;
+    font-size: 150%;
     font-family: sans-serif;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 1%;
 }
 
 /* sets size and type of font as well as the width and spacing */
 #order button {
-    font-size: 20px;
+    font-size: 130%;
     font-family: sans-serif;
     width: 500px;
-    margin: 100px 0 0 510px;
+    margin: 5% auto 0 auto;
+    background-color: beige;
 }
 
 /* sets spacing of container as well as centers the elements within */
@@ -664,3 +1058,4 @@ hovering over button sets the cursor to a pointer */
     justify-content: center;
     align-content: center;
 }
+

@@ -10,25 +10,22 @@
     </head>
     <header>
         <!-- Nav bar -->
-        <nav>
-           <ul id="nav-container">
+         <nav>
+          <ul id="nav-container">
             <img src="./images/casio-logo.png" width="120" height="67.5" alt="The casio logo">
-            <li>
+             <li>
               <a href="./index.html">Home</a>
              </li>
              <li>
               <a href="./calculator-catalog.html">Browse</a>
-             </li>
+             </li>           
              <li>
               <a href="./mission.html">About Us</a>
              </li>
              <li>
               <a href="./faq.html">Frequently Asked Questions</a>
              </li>
-             <li>
-              <a href="./shopping-cart.html"><img src="./images/cart-icon.png" alt="Checkout icon" width="45" height="45"></a>
-             </li>
-  
+            <a href="./shopping-cart.html"><img src="./images/cart-icon.png" alt="Checkout icon" width="45" height="45" id="cart"></a>
            </ul>
          </nav>
   
@@ -81,35 +78,42 @@
             <!--Input is labelled by information required, each input is 
             required else form won't submit-->
             <label for="card"><b>Card No</b><br>
+              <!--Required pattern is 4 of any digit followed by a dash * 4-->
               <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx" id="card" required pattern = "\d{4}-\d{4}-\d{4}-\d{4}" maxlength="19" minlength="19">
             </label>
           </div>
           <div class="info-box same-line">
             <label for="expiration" class="same-line"><b>Expiration</b><br>
+              <!--Required pattern is 2 of any digit followed by a / then 2 of any digit-->
               <input type="text" placeholder="dd/yy" id="expiration" required pattern = "\d{2}/\d{2}" maxlength="5" minlength="5">
             </label>
           </div>
           <div class="info-box same-line second">
             <label for="cvc" class="same-line"><b>CVC</b><br>
+              <!--Required pattern is any 3 digits-->
               <input type="text" placeholder="xxx" id="cvc" required pattern="\d{3}" minlength="3" maxlength="3">
             </label>
           </div>
           <div class="divider3" id="divider-right2" ></div>
           <div class="info-box">
             <label for="address"><b>Address</b><br>
+               <!--Required pattern is any alphabet including whitespace-->
               <input type="text" placeholder="Street Name" id="address" required pattern="[\s*a-zA-Z]*" minlength="2" maxlength="25">
             </label>
           </div>
           <div class="info-box same-line">
             <label for="unitno" class="same-line"><b>Unit No</b><br>
+                <!--Required pattern is a # followed by any 2 digits then a dash then any 2 digits-->
               <input type="text" placeholder="#07/54" id="unitno" required pattern="#\d{2}/\d{2}" minlength="6" maxlength="6">
             </label>
           </div>
           <div class="info-box same-line second">
             <label for="postal-code" class="same-line"><b>Postal Code</b><br>
+               <!--Required pattern is any 6 digits-->
               <input type="text" placeholder="543210" id="postal-code" required pattern="\d{6}" minlength="6" maxlength="6">
             </label>
           </div>
+          <div class="divider2" id="divider-right" ></div>
           <!--Submit button which brings you to a different page-->
           <input type="submit" id="submit">
         </form>
