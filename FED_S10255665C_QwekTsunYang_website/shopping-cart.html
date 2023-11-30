@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html id="cart">
+<html id="cart" lang="en">
     <!-- Tab name, links and meta content -->
     <head>
         <title>Casio Calculators</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale= 1">
-        <link href="./stylesheets/normalize.css" rel="stylesheet" type="text/css"/>
-        <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
-        
+        <link href="./stylesheets/normalize.css" rel="stylesheet" type="text/css">
+        <link href="./stylesheets/style.css" rel="stylesheet" type="text/css">
     </head>
-    <header>
+    <body>
+      <header>
         <!-- Nav bar -->
          <nav>
           <ul id="nav-container">
-            <img src="./images/casio-logo.png" width="120" height="67.5" alt="The casio logo">
+          <img src="./images/casio-logo.png" width="120" height="67.5" alt="The casio logo">
              <li>
               <a href="./index.html">Home</a>
              </li>
@@ -26,13 +26,11 @@
              <li>
               <a href="./faq.html">Frequently Asked Questions</a>
              </li>
-            <a href="./shopping-cart.html"><img src="./images/cart-icon.png" alt="Checkout icon" width="45" height="45" id="cart"></a>
+          <a href="./shopping-cart.html"><img src="./images/cart-icon.png" alt="Checkout icon" width="45" height="45" id="cart-icon"></a>
            </ul>
          </nav>
   
       </header>
-    
-    <body>
       <!--Shopping Cart-->
       <h3>Shopping Cart</h3>
       <div class="divider"></div>
@@ -73,7 +71,7 @@
         <!--The Order Form-->
         <form id="form" action="order-success.html">
           <h2 class="right-title">Payment and Shipping Info</h2>
-          <div class="divider2" id="divider-right"></div>
+          <div class="divider2 divider-right" ></div>
           <!--Each input submission with data validation for each-->
           <div class="info-box">
             <!--Input is labelled by information required, each input is 
@@ -114,7 +112,7 @@
               <input type="text" placeholder="543210" id="postal-code" required pattern="\d{6}" minlength="6" maxlength="6">
             </label>
           </div>
-          <div class="divider2" id="divider-right" ></div>
+          <div class="divider2 divider-right"  ></div>
           <!--Submit button which brings you to a different page-->
           <input type="submit" id="submit">
         </form>
