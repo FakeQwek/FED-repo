@@ -21,17 +21,17 @@ The Casio Calculator Shop Website will include the following features:
 6. Order finished page
  
 ### Existing Features
-- Homepage featuring popular calculators (non-responsive)
-- CASIO Mission Statement (non-responsive)
-- FAQ Page (non-responsive)
-- Calculator Browsing (non-responsive)
-- Shopping cart with order form (non-responsive)
-- Order finished page (non-responsive)
+- Homepage featuring popular calculators 
+- CASIO Mission Statement 
+- FAQ Page 
+- Calculator Browsing 
+- Shopping cart with order form 
+- Order finished page 
 
 
 
 ### Features Left to Implement
-- Responsiveness
+- Functional checkout (if there's time)
 
   
 
@@ -66,10 +66,10 @@ The Casio Calculator Shop Website will include the following features:
     4. Submit order
 
 Responsiveness:
-* None
+* Supports devices from 1525px to 320px. Best viewed at 1440px x 760px
 
 Bugs and Issues: 
-* Website layout is messed up when minimising; should be fixed when responsiveness is implemented
+* ~~Website layout is messed up when minimising; should be fixed when responsiveness is implemented~~
 
 ## Credits
 
