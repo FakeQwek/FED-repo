@@ -11,21 +11,29 @@ The Casio Calculator Shop will provide customers with a convenient and easy to u
 Design plan url: https://github.com/FakeQwek/FED-repo/blob/main/Casio%20Calculator%20Website%20Prototype%20(1).xd
 
 ## Features
-(Tentative and may be adjusted)
+
 The Casio Calculator Shop Website will include the following features:
-1. Calculator browsing with selection filters
+1. Calculator browsing with search bar
 2. Homepage featuring popular calculators
-3. Shopping cart
+3. Shopping cart with order form
 4. FAQ Page
 5. CASIO Mission Statement
+6. Order finished page
  
 ### Existing Features
-- None 
+- Homepage featuring popular calculators 
+- CASIO Mission Statement 
+- FAQ Page 
+- Calculator Browsing 
+- Shopping cart with order form 
+- Order finished page 
 
 
 
 ### Features Left to Implement
-- All of the features
+- Functional checkout (if there's time)
+
+  
 
 ## Technologies Used
 
@@ -36,25 +44,38 @@ The Casio Calculator Shop Website will include the following features:
     - The project uses **Visual Studio Code** to develop the website and all its features
 
 ## Testing
-(To be updated)
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+1. Browse homepage:
+    1. Go to the Homepage
+    2. Observe popular calculators
+2. Read mission statement:
+    1. Go to about us page
+    2. Read mission statement
+3. Have questions about CASIO calculator:
+    1. Go to FAQ page
+    2. Read questions and answers
+    3. Contact casio staff for further enquiries
+4. Want to find suitable calculator:
+    1. Go to browse page
+    2. Search for calculator model with search bar
+    3. Find calculator model
+    4. Add to cart
+5. Want to finalise purchase
+    1. Go to cart page
+    2. Review order details
+    3. Fill in form information
+    4. Submit order
 
-1. Placeholder:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+Responsiveness:
+* Supports devices from 1525px to 320px. Best viewed at 1440px x 760px
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Bugs and Issues: 
+* ~~Website layout is messed up when minimising; should be fixed when responsiveness is implemented~~
 
 ## Credits
 
 ### Content
 - Casio's history was obtained from https://en.wikipedia.org/wiki/Casio
+
 
 ### Media
 For the wireframes:
@@ -76,7 +97,44 @@ For the wireframes:
   
   * Calculator with Book - https://i.pinimg.com/originals/a2/86/a0/a286a06382ff387f24c39599e4e81639.jpg
   
+  
+For the website iteself: 
+  * Shopping Cart Icon - https://cdn-icons-png.flaticon.com/512/1413/1413908.png
+
+  * Casio Logo- https://1000logos.net/wp-content/uploads/2017/12/Casio-Logo.png
+
+  * Calculator Banner 1: https://www.casio.com/content/casio/locales/mea/en/products/scientific-calculators/_jcr_content/root/responsivegrid/teaser_copy.casiocoreimg.jpeg/1643768641514/scien-finacal-top-banner-kai.jpeg
+
+  * Calculator Banner 2: https://www.casio.com/content/casio/locales/mea/en/products/scientific-calculators/standard-models/_jcr_content/root/responsivegrid/teaser_copy.casiocoreimg.jpeg/1643768642217/classwiz-eng-banner-kai.jpeg
+
+  * Calculator Banner 3: https://www.casio.com/content/casio/locales/us/en/products/calculators/graphing/_jcr_content/root/responsivegrid/teaser_copy_copy.casiocoreimg.png/1675369329483/casio-graphing-calculator-banner.png
+
+  * Calculator 1: https://casioeducation.com.au/wp-content/uploads/2022/10/fx-8200-AU-web-768x768.png
+
+  * Calculator 2: https://i.ebayimg.com/images/g/2WcAAOSwr35jP5XM/s-l1200.webp
+
+  * Calculator 3: https://www.harleyseducational.com.au/sites/harleyseducational.com.au/files/calculator-casio-scientific-fx82au-plus-ii.jpg
+
+  * Calculator and Book: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxc-fStJcG3fLq-FuDdWQWxxBSIcXhg1tQw&usqp=CAU
+
   * Shopping Cart Icon -https://cdn-icons-png.flaticon.com/512/263/263142.png
+
+  * Calculator 4: https://m.media-amazon.com/images/I/61kM1yUnaLL.SS700.jpg
+
+  * Calculator 5: https://bookstack.queensu.ac.uk/wp-content/uploads/2022/07/Scientific-calculator-original.jpg
+
+  * Calculator 6: https://m.media-amazon.com/images/I/61GjEOoTmSL._AC_UF894,1000_QL80_.jpg
+
+  * Calculator 7: https://m.media-amazon.com/images/I/71XX79HDU7L._AC_SX679_.jpg
+
+  * Calculator 8: https://m.media-amazon.com/images/I/61HWvsaXRTL.__AC_SX300_SY300_QL70_ML2_.jpg
+
+  * Calculator 9: https://m.media-amazon.com/images/I/716Qoq3t58L._AC_UL480_QL65_.jpg
+
+  * Calculator 10: https://m.media-amazon.com/images/I/81nD4gy1QuL._AC_SX679_.jpg
+
+  * Calculator 11: https://m.media-amazon.com/images/I/81L5MLowkoL._AC_SY879_.jpg
+
 
 ### Acknowledgements
 

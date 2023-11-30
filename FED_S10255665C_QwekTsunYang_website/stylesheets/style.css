@@ -696,7 +696,7 @@ cursor changes when hovering over button */
 /* sets size and type of font, as well as spacing */
 #cart h3 {
     font-size: 35px;
-    font-family: system-ui;
+    font-family: sans-serif;
     padding: 50px 0px 0px 225px;
 }
 
@@ -723,7 +723,7 @@ the divider */
 /* sets the size and type of font of h2 as well as its spacing */
 #cart h2 {
     font-size: 25px;
-    font-family: system-ui;
+    font-family: sans-serif;
     padding: 50px 0px 0px 400px;
 }
 
@@ -790,7 +790,7 @@ the divider */
 /* sets h2 font size and type */
 #cart h2 .right-title{
     font-size: 25px;
-    font-family: system-ui;
+    font-family: sans-serif;
 }
 
 /* moves divider right */
@@ -1028,7 +1028,7 @@ hovering over button sets the cursor to a pointer */
 /* spaces and sets font size and type of h3 */
 #order h3 {
     font-size: 350%;
-    font-family: system-ui;
+    font-family: sans-serif;
     margin: 5% auto 3% auto;
     
 }
