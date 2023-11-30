@@ -139,4 +139,3 @@ For the website iteself:
 ### Acknowledgements
 
 - Some inspiration for layouts have come from https://www.amazon.com/ and https://www.uniqlo.com/sg/en/
-- Calculator Search Function implemented was learnt from: https://www.youtube.com/watch?v=TlP5WIxVirU
