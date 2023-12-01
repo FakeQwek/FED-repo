@@ -132,7 +132,7 @@ nav #cart-icon:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    position: relative;
 }
 
 /* sets size, background, rounded corners and margin of divider */
@@ -154,14 +154,12 @@ nav #cart-icon:hover {
 
 /* sets the positioning of calculator slots with a gap of 3 columns */
 #homepage body #item-container {
-
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   column-gap: 165px;
   flex-wrap: wrap;
-
 }
 
 /* sets size of each img, and rounded corners as well as aligns img to center*/
@@ -181,8 +179,7 @@ nav #cart-icon:hover {
 to one another */
 #homepage .desc{
     display:inline-block;
-    margin-left: 225px;
-    
+    margin-left: 225px;    
 }
 
 /* sets size of the font as well as its font type */
@@ -201,10 +198,29 @@ to one another */
     margin-left: 145px;
 }
 
+/* sets the banners to transparent */
+#homepage .banners {
+    display: none;
+}
+
+/* initialises fade animation */
+#homepage .fade {
+    animation-name: fade;
+    animation-duration: 8s;
+}
 
 
 
+/*animates the fading in and out animation*/
+@keyframes fade{
+    0% {opacity: 0}
+    30% {opacity: 1}
+    70% {opacity: 1}
+    100% {opacity: 0}
 
+  }
+
+ 
 
 /* For smaller devices - Adjusts banner, text etc based on viewport*/
 @media (max-width: 1300px) {

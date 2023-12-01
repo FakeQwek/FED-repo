@@ -32,7 +32,27 @@ const search = () =>{
 /* Button Alert */
 function addedToCart() {
     alert("Added Successfully!");
+}
+
+
+/* Banner Display */
+let bannerIndex = 0;
+swapBanners();
+
+function swapBanners() {
+  /* gets all elements with class name banner */
+  let banners = document.getElementsByClassName("banners");
+  /* loops through each of the banners and makes them invisible*/
+  for (let i = 0; i < banners.length; i++) {
+    banners[i].style.display = "none";
   }
+  bannerIndex += 1;
+  /* when banner index is all the way, reset the index to loop */
+  if (bannerIndex > banners.length) {bannerIndex = 1}
+  banners[bannerIndex-1].style.display = "block";
+  setTimeout(swapBanners, 8000); 
+  /* Swaps banner every 8 seconds */
+}
 
 
 
