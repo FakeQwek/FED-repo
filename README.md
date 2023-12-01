@@ -31,7 +31,7 @@ The Casio Calculator Shop Website will include the following features:
 
 
 ### Features Left to Implement
-- Functional checkout (if there's time)
+- ~~Functional checkout (if there's time)~~
 
   
 
@@ -46,7 +46,7 @@ The Casio Calculator Shop Website will include the following features:
 - [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
     - The project uses **Jigsaw Validator** to validate css markup
  
- -[W3C Markup Vslidation Service](https://validator.w3.org/)
+- [W3C Markup Vslidation Service](https://validator.w3.org/)
     - The porject uses the **W3C Markup Validation Service** to validate html markup
 
 ## Testing
